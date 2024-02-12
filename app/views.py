@@ -113,3 +113,6 @@ def appointment(request):
     context['appointment']=appointment
     context['form']=form
     return render(request,'appointment.html',context)
+
+def department(request):
+    return render(request,'department.html')

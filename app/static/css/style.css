@@ -919,10 +919,6 @@ textarea{
   border: 1px solid #c8cfe6
 }
 
-.department{
-    margin-top: 100px;
-    margin-bottom: 100px;
-}
 
 .dept-img{
   height: 320px;
@@ -930,16 +926,24 @@ textarea{
 }
 
 .dept-content{
-    background: #e4e8f3;
-    margin: 0px;
-  }
+  background: #e4e8f3;
+  width: 100%;
+  text-align: justify;
+  /* margin: 0px; */
+}
 
+.department-section{
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+/* 
 .dept-contents p{
 font-size: 16px;
 line-height: 28px;
 color: #666666;
-}
-
+padding-top: 60px;
+} */
 
 /* Media Queries */
 @media only screen and (max-width:1200px){

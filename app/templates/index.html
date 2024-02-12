@@ -15,7 +15,7 @@
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
   />
-    <link rel="stylesheet" href="{% static 'css/sample.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
   </head>
   <body>
 
@@ -25,37 +25,8 @@
    <section class="introduction-section">
  
 
-    <div class="header-links">
-      <div class="container-fluid-lg">
-        <div class="row">
-    
-    
-          <div class="col-lg-6 col-md-6">
-            <ul type="none" class="social-media">
-              <li class="ps-3 pe-3">
-                <i class="fa fa-facebook"></i>
-              </li>
-              <li class="ps-3 pe-3"><i class="fa fa-twitter"></i></li>
-              <li class="ps-3 pe-3"><i class="fa fa-linkedin"></i></li>
-              <li class="ps-3 pe-3"><i class="fa fa-instagram"></i></li>
-            </ul>
-          </div>
-    
-          <div class="col-lg-6 col-md-6">
-            <!-- <a href="fsdh">click</a> -->
-            <!-- <form action="sdhgdh" method="post">
-              <input type="submit" name="" id="">
-            </form> -->
 
-            <a href="/appointment/" class="make-appointment">Make An Appointment</a>
-          </div>
-    
-    
-        </div>
-      </div>
-    </div>
-
-    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="2000">
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-pause="false" data-bs-interval="4000">
       <div class="carousel-inner">
         <div class="carousel-item active">
           <div class="row car">
@@ -155,25 +126,14 @@
         </div>
        
       </div>
-        <button class="carousel-control-prev visually-hidden" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next visually-hidden" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
     </div>
+   </section>
+   
+   
+<!-- marquee section start -->
 
+<div class="container marquee-section position-absolute bottom-0 start-50 translate-middle-x">
 
-<header>
-  {% include 'header.html' %}
-</header>
-
-
-
-<!-- marquee section  -->
-<div class="container-xxl container-xl marquee-section position-absolute bottom-0 start-50 translate-middle-x">
   <div class="scroll row">
 
 
@@ -183,14 +143,22 @@
 
 
 
-    <div class="col-lg-9">
+    <div class="col-lg-9 scroll-right">
     <marquee behavior="" direction="left" scrollamount="10">
        
         <p class="marq mt-3">Stay Updated with GMRL: Exciting News and Events Await! Explore the latest in health breakthroughs, special promotions, and community engagements right here. Check back often for updates that keep you informed and inspired.</p>
     </marquee>
     </div>
 </div>
-  </div>
+
+
+
+
+
+
+
+
+</div>
 
 
 
@@ -202,7 +170,24 @@
 
 
 
-   </section>
+
+
+
+<!-- marquee section end -->
+
+
+
+
+
+
+
+<header>
+  
+  
+  {% include 'header.html' %}
+</header>
+
+ 
    <!-- Introduction end -->
    
    <div class="header-links">
@@ -263,7 +248,7 @@
           <p class="mt-5 welcome-caption">Looking Ahead with Innovation</p>
           <p class="mt-4 welcme-p">As we look ahead, our commitment to innovation and excellence remains unwavering. We understand that a proactive approach to healthcare is essential. Therefore, we are here to empower you with the knowledge and insights needed to make informed decisions about your well-being.</p>
           <p class="mt-5 welcome-caption">Choose GMRL Laboratories for Optimal Health</p>
-          <p class="mt-4 welcme-p">Best laboratory in Ernakulam for a healthcare experience that goes beyond expectations – where cutting-edge technology meets compassionate care. Your journey to optimal health begins with us, and we’re excited to be a part of it. Trust <a href="">GMRL Laboratories</a>, where your health is our passion, and your well-being is our commitment.</p>
+          <p class="mt-4 welcme-p">Best laboratory in Ernakulam for a healthcare experience that goes beyond expectations – where cutting-edge technology meets compassionate care. Your journey to optimal health begins with us, and we’re excited to be a part of it. Trust <a href="../">GMRL Laboratories</a>, where your health is our passion, and your well-being is our commitment.</p>
           <a href="/contact-us/">
           <button type="button" class="btn btn-primary rounded-pill ps-4 pe-4 intro-btn mt-4">Learn More</button>
           </a>
@@ -288,7 +273,7 @@
        </div>
 </a>     
       
-<a href="">
+<a href="/contact-us/">
        <div class="flip b pt-4 pb-4 reach">
            <div class="flip-container">
              <img width="64" height="64" src="https://img.icons8.com/quill/64/666666/place-marker.png" alt="place-marker" class="first"/>
@@ -300,7 +285,7 @@
        </div>
 </a>   
      
-<a href="">
+<a href="/package/">
        <div class="flip b pt-4 pb-4">
            <div class="flip-container">
              <img width="64" height="64" src="https://img.icons8.com/dotty/64/666666/doctors-bag.png" alt="doctors-bag" class="first"/><img width="64" height="64" src="https://img.icons8.com/dotty/64/85ba32/doctors-bag.png" alt="doctors-bag" class="second"/>
@@ -310,7 +295,7 @@
                </div>
 </a>    
        
-<a href="">
+<a href="/test/">
        <div class="flip b pt-4 pb-4">
            <div class="flip-container">
            <img width="64" height="64" src="https://img.icons8.com/ios/64/666666/microscope.png" alt="microscope" class="first"/> <img width="64" height="64" src="https://img.icons8.com/ios/64/85ba32/microscope.png" alt="microscope" class="second"/>
@@ -321,7 +306,7 @@
        </div>
 </a>
     
-<a href="">
+<a href="/appointment/">
        <div class="flip pt-4 pb-4 ps-sm-5 pe-sm-5 home">
            <div class="flip-container">
            <img width="64" height="64" src="https://img.icons8.com/ios/64/666666/home--v1.png" alt="home--v1" class="first"/> <img width="64" height="64" src="https://img.icons8.com/ios/64/85ba32/home--v1.png" alt="home--v1" class="second"/>
@@ -361,33 +346,46 @@
           <div class="swiper-wrapper">
       
             <div class="swiper-slide">
+              <a href="../" class="text-black">
                 <li class="d-flex flex-column align-items-center swipe-li bg-white shadow-sm mb-5 bg-body rounded swiper-slide justify-content-center"><img width="120" height="120" src="{% static 'img/pathology.png' %}"/>
                     <span class="mt-4 co">Pathology</span></li>
+              </a>
             </div>
       
             <div class="swiper-slide">
+              <a href="../" class="text-black">
                 <li class="d-flex flex-column align-items-center swipe-li bg-white shadow-sm mb-5 bg-body rounded swiper-slide justify-content-center"><img width="120" height="120" src="{% static 'img/Serology.png' %}"/><span class="mt-4 co">Serology</span></li>
-    
+              </a>
             </div>
       
             <div class="swiper-slide">
+              <a href="../" class="text-black">
                 <li class="d-flex flex-column swipe-li align-items-center bg-white shadow-sm mb-5 bg-body rounded swiper-slide justify-content-center"><img width="120" height="120" src="{% static 'img/Immunology.png' %}" alt="external-immunity-virus-mutation-wanicon-lineal-wanicon"/><span class="mt-4 co">Immunology</span></li>
+              </a>
             </div>
       
             <div class="swiper-slide">
+              <a href="../" class="text-black">
                 <li class="d-flex flex-column swipe-li align-items-center bg-white shadow-sm mb-5 bg-body rounded swiper-slide justify-content-center"><img width="120" height="120" src="{% static 'img/radiology.png' %}" alt="external-radiology-science-outline-outline-black-m-oki-orlando"/><span class="mt-4 co">Radiology</span></li>
+              </a>
             </div>
             
             <div class="swiper-slide">
+              <a href="../" class="text-black">
                 <li class="d-flex flex-column swipe-li align-items-center bg-white shadow-sm mb-5 bg-body rounded swiper-slide justify-content-center"><img width="120" height="120" src="{% static 'img/molecular-biology.png' %}" alt="peptide"/><span class="mt-4co">Moleculor Biology</span></li>
+              </a>
             </div>
     
             <div class="swiper-slide">
+              <a href="../" class="text-black">
                 <li class="d-flex flex-column swipe-li align-items-center bg-white shadow-sm mb-5 bg-body rounded swiper-slide justify-content-center"><img width="120" height="120" src="{% static 'img/bio-chemistry.png' %}" alt="external-biochemistry-biochemistry-outline-others-phat-plus-20"/><span class="mt-4 co">Bio Chemistry</span></li>
+              </a>
             </div>
     
             <div class="swiper-slide">
+              <a href="../" class="text-black">
                 <li class="d-flex flex-column swipe-li align-items-center bg-white shadow-sm mb-5 bg-body rounded swiper-slide justify-content-center"><img width="120" height="120" src="{% static 'img/microbiology.png' %}" alt="external-microbiology-vaccine-and-laboratory-kosonicon-outline-kosonicon"/><span class="mt-4 co">Microbiology</span></li>
+              </a>
             </div>
     
     
@@ -491,7 +489,7 @@
     <div class="slide-container-2">
       <div class="card-wrapper swiper-wrapper">
   
-        <a href="">
+        <a href="/executive-package/">
         <div class="card swiper-slide card-1">
           <div class="" style="border: none;">
             <div class="enquiry-img">
@@ -512,7 +510,7 @@
         </div>
         </a>
   
-        <a href="">
+        <a href="/ayush-general/">
         <div class="card swiper-slide card-2">
           <div class="" style="border: none;">
             <div class="enquiry-img">
@@ -532,7 +530,7 @@
         </div>
         </a>
   
-        <a href="">
+        <a href="/ayush-silver-plan/">
         <div class="card swiper-slide card-3">
           <div class="" style="border: none;">
             <div class="enquiry-img">
@@ -552,7 +550,7 @@
         </div>
         </a>
   
-        <a href="">
+        <a href="/ayush-diabetic/">
         <div class="card swiper-slide card-4">
           <div class="" style="border: none;">
             <div class="enquiry-img">
@@ -572,7 +570,7 @@
         </div>
         </a>
   
-        <a href="">
+        <a href="/ayush-gold/">
         <div class="card swiper-slide card-4">
           <div class="" style="border: none;">
             <div class="enquiry-img">
@@ -592,7 +590,7 @@
         </div>
         </a>
   
-        <a href="">
+        <a href="/cardiac/">
         <div class="card swiper-slide card-4">
           <div class="" style="border: none;">
             <div class="enquiry-img">
