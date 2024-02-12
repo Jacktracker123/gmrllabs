@@ -1,7 +1,9 @@
 from django.shortcuts import render
+from django.shortcuts import redirect
 from . models import *
 from . forms import *
 from django.http import HttpResponse
+from django.contrib import messages
 # Create your views here.
 def index(request):
     return render(request,'index.html')
@@ -83,7 +85,7 @@ def contact(request):
         if'save' in request.POST:
             form=Contact_form(request.POST)
             form.save()
-            return HttpResponse('Data saved')
+            messages.success(request,'Message send successfully')
     
 
     contact=Contact.objects.all()
@@ -99,7 +101,9 @@ def appointment(request):
         if'save' in request.POST:
          form=Appointment_form(request.POST)
          form.save()
-         return HttpResponse('Data saved')
+         messages.success(request,'Appointment Booking Successfull')
+         
+         
 
 
 

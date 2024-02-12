@@ -4,7 +4,7 @@ from django.db import models
 class Appointment(models.Model):
     name=models.CharField(max_length=255)
     email=models.CharField(max_length=255)
-    phone=models.IntegerField()
+    phone=models.CharField(max_length=255)
     date=models.DateField(max_length=255)
     time=models.TextField(max_length=255)
     age=models.CharField(max_length=255)
@@ -15,6 +15,6 @@ class Appointment(models.Model):
 class Contact(models.Model):
     name=models.CharField(max_length=255)
     email=models.CharField(max_length=255)
-    phone=models.IntegerField()
+    phone=models.CharField(max_length=255)
     subject=models.CharField(max_length=255)
     message=models.TextField(max_length=500)

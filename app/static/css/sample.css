@@ -73,13 +73,13 @@ a{
   .introduction-section{
     background-color: whitesmoke;
     position: relative;
-    z-index: 1050;
+    /* z-index: 1050; */
 }
 .intro-img{
   height: 100vh;
 }
 .intro-caption{
-    z-index: 1050;
+    /* z-index: 1050; */
 }
 
 .intro-heading{
@@ -123,6 +123,7 @@ font-size: 56px;
 marquee .marq {
     color: black;
     font-size: 16px;
+    z-index: -1;
 }
 
 .scroll-h{
@@ -904,14 +905,14 @@ textarea{
   padding: 0px 12px;
 }
 .make-appointment{
-  background: #85ba32;
+  background:greenyellow;
   float: right;
   padding: 0px 20px;
+  transition-duration: 0.3s;
   margin: 0px 28px 0px 0px;
   color: #fff;
   line-height: 40px;
   font-size: 14px;
-  cursor: pointer;
 }
 
 .appointment-form{
