@@ -937,13 +937,16 @@ textarea{
   margin-bottom: 100px;
 }
 
-/* 
-.dept-contents p{
-font-size: 16px;
-line-height: 28px;
-color: #666666;
-padding-top: 60px;
-} */
+.testimonial-section{
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.privacy-section{
+  margin-top: 100px;
+  margin-bottom: 100px
+}
+
 
 /* Media Queries */
 @media only screen and (max-width:1200px){

@@ -744,13 +744,22 @@
     <p class="text-center">For any inquiries, please feel free to <br>
       reach out to us.</p>
   </div>
-    <form action="" class="container-lg">
-    <input class="form-control mt-3" type="text" placeholder="Your Name" aria-label="default input example">
-    <input class="form-control mt-3" type="email" placeholder="Email" aria-label="default input example">
-    <input class="form-control mt-3" type="number" placeholder="Phone" aria-label="default input example">
-    <textarea class="form-control mt-3" id="exampleFormControlTextarea1" rows="3" placeholder="Message"></textarea>
+    <form class="container-lg" method="POST">
+      {% csrf_token %}
+      {% if messages %}
+    {% for message in messages %}
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        <b>{{message}}</b>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+      {% endfor %}
+      {% endif %}
+    <input class="form-control mt-3 text-black" type="text" placeholder="Your Name" aria-label="default input example" name="name" required>
+    <input class="form-control mt-3 text-black" type="email" placeholder="Email" aria-label="default input example" name="email" pattern="[a-z].*[a-z0-9]@gmail.com" required>
+    <input class="form-control mt-3 text-black" type="number" placeholder="Phone" aria-label="default input example" name="phone" pattern="[6-9].*[0-9].{8}" required>
+    <textarea class="form-control mt-3 text-black" id="exampleFormControlTextarea1" rows="3" placeholder="Message" name="message" required></textarea>
     <div class=" d-flex justify-content-center">
-    <button type="submit" class="form-btn mt-3 mb-5 rounded">Submit</button>
+    <button type="submit" class="form-btn mt-3 mb-5 rounded" name="save">Submit</button>
     </div>
     </form>
   

@@ -919,10 +919,6 @@ textarea{
   border: 1px solid #c8cfe6
 }
 
-.department{
-    margin-top: 100px;
-    margin-bottom: 100px;
-}
 
 .dept-img{
   height: 320px;
@@ -930,16 +926,64 @@ textarea{
 }
 
 .dept-content{
-    background: #e4e8f3;
-    margin: 0px;
-  }
-
-.dept-contents p{
-font-size: 16px;
-line-height: 28px;
-color: #666666;
+  background: #e4e8f3;
+  width: 100%;
+  text-align: justify;
+  /* margin: 0px; */
 }
 
+.department-section{
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.testimonial-section{
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.card-test{
+  border: 1px solid #c8cfe6;
+}
+
+.card-test:hover{
+  border: 1px solid #22419c;
+}
+
+.card-footer img{
+  background-color: black;
+  border-radius: 60px;
+}
+
+.card-body{
+  height: auto;
+  padding: 25px;
+  background: none;
+}
+
+.card-body:hover{
+  border: 1px solid #22419c;
+}
+
+.card-test{
+  font-style: italic;
+  font-size: 16px;
+  color: #666666;
+}
+
+.card-footer{
+  gap: 20px;
+}
+
+.privacy-section{
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.privacy-p{
+  line-height: 28px;
+  color: #666666;
+}
 
 /* Media Queries */
 @media only screen and (max-width:1200px){
@@ -1173,6 +1217,7 @@ h1,h2,h6,h4{
 }
 
 }
+
 
 
 

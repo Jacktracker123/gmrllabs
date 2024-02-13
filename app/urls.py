@@ -24,6 +24,11 @@ urlpatterns = [
     path('contact-us/', views.contact,name='contact-us'),
     path('appointment/', views.appointment,name='appointment'),
     path('department/', views.department,name='department'),
+    path('privacy-policy/', views.privacy_policy,name='privacy-policy'),
+    path('terms&conditions/', views.terms_conditions,name='terms&conditions'),
+    path('testimonials/', views.testimonials,name='testimonials'),
+
+
 
 
 

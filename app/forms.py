@@ -11,3 +11,9 @@ class Contact_form(forms.ModelForm):
     class Meta:
         model=Contact
         fields='__all__'
+
+
+class Enquiry_form(forms.ModelForm):
+    class Meta:
+        model=Enquiry
+        fields='__all__'

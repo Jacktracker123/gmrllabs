@@ -6,6 +6,20 @@ from django.http import HttpResponse
 from django.contrib import messages
 # Create your views here.
 def index(request):
+    context={}
+    form=Enquiry_form()
+
+    if request.method=="POST":
+        if'save' in request.POST:
+            form=Enquiry_form(request.POST)
+            form.save()
+            messages.success(request,'Enquiry form submitted')
+
+
+    enquiry=Enquiry.objects.all()
+    context['enquiry']=enquiry
+    context['form']=form
+
     return render(request,'index.html')
 
 def about(request):
@@ -37,7 +51,7 @@ def ayush_gold(request):
 
     
 def ayush_silver(request):
-    return render(request,'ayush-sliver-plan.html')
+    return render(request,'ayush-silver-plan.html')
 
     
 def ayush_general(request):
@@ -68,7 +82,7 @@ def gmrl_vadakkekotta(request):
 
   
 def moleculor_biology(request):
-    return render(request,'molecular-biology.html')
+    return render(request,'moleculor-biology.html')
 
 def radiology(request):
     return render(request,'radiology.html')
@@ -116,3 +130,12 @@ def appointment(request):
 
 def department(request):
     return render(request,'department.html')
+
+def privacy_policy(request):
+    return render(request,'privacy.html')
+
+def terms_conditions(request):
+    return render(request,'terms.html')
+
+def testimonials(request):
+    return render(request,'testimonial.html')

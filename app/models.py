@@ -18,3 +18,9 @@ class Contact(models.Model):
     phone=models.CharField(max_length=255)
     subject=models.CharField(max_length=255)
     message=models.TextField(max_length=500)
+
+class Enquiry(models.Model):
+    name=models.CharField(max_length=255)
+    email=models.CharField(max_length=255)
+    phone=models.CharField(max_length=255)
+    message=models.TextField(max_length=500)
