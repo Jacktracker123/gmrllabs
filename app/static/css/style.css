@@ -239,6 +239,11 @@ border-right: 1px solid #c8cfe6;
 font-family: 'Oswald', sans-serif;
 font-size: 44px;
 }
+.pack-img{
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
 
 
 .en-img:hover{
@@ -565,6 +570,7 @@ border-right: 1px solid #c8cfe6;
   color: #fff;
   border-radius: 3px;
   font-size: 16px;
+  padding: 12px 0px;
 }
 .executive{
   margin-top: 100px;
